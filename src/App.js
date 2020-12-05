@@ -12,7 +12,7 @@ function App() {
      <Greet  name='one-1' heroname='superman' >
        <button>Action</button>
       </Greet>
-     <Welcome name='two'/>
+     <Welcome name='two' food='pizza'/>
      <Hello name='three'/>
     </div>
   );
