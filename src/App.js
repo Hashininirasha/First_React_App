@@ -6,8 +6,12 @@ import Hello from './Components/Hello'
 function App() {
   return (
     <div className="App">
-     <Greet  name='one' />
-     <Greet  name='one-1' />
+     <Greet  name='one' heroname='batman'>
+       <h1>This is Childern props</h1>
+     </Greet>
+     <Greet  name='one-1' heroname='superman' >
+       <button>Action</button>
+      </Greet>
      <Welcome name='two'/>
      <Hello name='three'/>
     </div>

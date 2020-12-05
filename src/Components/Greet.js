@@ -5,7 +5,15 @@ import React from 'react'
 }*/
 
 export const Greet = (props) => {
-console.log(props)
-return <h1>Hasi {props.name}</h1>
+   console.log(props)
+   
+   return (
+      <div>
+         <h1>
+            Hasi {props.name} nira {props.heroname}
+         </h1>
+         {props.childern}
+      </div>
+   )
 }
 export default Greet
