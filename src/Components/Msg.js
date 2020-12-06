@@ -1,12 +1,28 @@
 import React ,{Component} from 'react';
 
 class Msg extends Component{
+
+    constructor(){
+        super()
+        this.state={
+            massage: 'Welcome visitor'
+
+
+        }
+    }
+
     render(){
         return (
-        <h1>
-            Welcome visiter
-        </h1>
+        <div>
+        <h1>{this.state.massage}</h1>
+        <button>Subscribe</button>
+        </div>
+
+
         )
+       
+    
+        
     }
 }
 export default Msg;
