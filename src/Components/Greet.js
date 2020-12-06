@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 /*function Greet(){
    return<h1>Hello Hasini</h1>
@@ -16,4 +16,4 @@ export const Greet = (props) => {
       </div>
    )
 }
-export default Greet
+export default Greet;

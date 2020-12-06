@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Hello = () => {
     //return(
@@ -9,4 +9,4 @@ const Hello = () => {
     return React.createElement('div',{id:'hello',class:'dummy'},React.createElement('h1','null','Hello Hasini'))
 }
 
-export default Hello 
+export default Hello;
