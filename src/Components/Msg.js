@@ -11,11 +11,18 @@ class Msg extends Component{
         }
     }
 
+    changeMessage(){
+
+        this.setState({
+            massage:'Thanks for subscribing ..'
+        })
+    }
+
     render(){
         return (
         <div>
         <h1>{this.state.massage}</h1>
-        <button>Subscribe</button>
+        <button onClick={() => this.changeMessage()} >Subscribe</button>
         </div>
 
 
