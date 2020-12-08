@@ -5,9 +5,12 @@ import Greet  from './Components/Greet'
 import Welcome from './Components/Welcome'
 import Hello from './Components/Hello'
 import Msg from './Components/Msg'
+import Counter from './Components/Counter'
+
 function App() {
   return (
     <div className="App">
+      <Counter />
      <Greet  name='one' heroname='batman'>
        <h1>This is Childern props</h1>
      </Greet>
