@@ -15,16 +15,23 @@ class Counter extends Component{
             () => {
                 console.log("Callback_Value",this.state.count)
             }
-            )
+             )
 
             console.log(this.state.count)
         }
+
+        incrementFive(){
+            this.increment()
+            this.increment()
+            this.increment()
+        }
+
 
     render(){ 
         return (
             <div>
                 <div>Counter - {this.state.count}</div>
-                <button onClick={() => this.increment() }>Increment</button>
+                <button onClick={() => this.incrementFive() }>Increment</button>
             </div>
             )
     }
