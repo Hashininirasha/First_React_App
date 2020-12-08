@@ -9,7 +9,7 @@ class Counter extends Component{
             }
         }
         increment(){
-            this.setState({
+            /*this.setState({
                 count : this.state.count + 1
             },
             () => {
@@ -17,7 +17,10 @@ class Counter extends Component{
             }
              )
 
-            console.log(this.state.count)
+            console.log(this.state.count)*/
+            this.setState((prevState,props) => ({
+                count : prevState.count+1
+            }) )
         }
 
         incrementFive(){
