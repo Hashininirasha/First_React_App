@@ -1,5 +1,5 @@
-import React from 'react';
-import Namelist from './Component/Namelist';
+import React,{Component} from 'react';
+import Namelist from './Components/Namelist'
 import './App.css';
 
 
