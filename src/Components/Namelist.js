@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Namelist(){
-    return(){
+    return(
         <div>
         <h1>Name List</h1>
         <hr />
@@ -11,5 +11,6 @@ function Namelist(){
             <li>Munasinghe - Course - html </li>
         </ul>
         </div>
-    }
+    );
 }
+export default Namelist;
