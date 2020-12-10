@@ -4,13 +4,17 @@ import NameListItem from './NameListItem'
 
 function Namelist(){
     return(
-        <div>
+        <React.Fragment>
         <h1>Name List</h1>
         <hr />
         <ul>
+            
+            <NameListItem  name='Hashini' course="html"/>
+            <NameListItem />
+            <NameListItem />
             <NameListItem />
         </ul>
-        </div>
+        </React.Fragment>
     );
 }
 export default Namelist;
