@@ -9,10 +9,10 @@ function Namelist(){
         <hr />
         <ul>
             
-            <NameListItem  name='Hashini' course="html"/>
-            <NameListItem  name="Nirasha" course="css"/>
-            <NameListItem  name="Munasinghe" course="java"/>
-            <NameListItem  name="Dauna" course="c#"/>
+            <NameListItem  name='Hashini' course="html" email="hasi@gmail.com"/>
+            <NameListItem  name="Nirasha" course="css" email="nira@gmail.com"/>
+            <NameListItem  name="Munasinghe" course="java" email="muna@gmail.com"/>
+            <NameListItem  name="Dauna" course="c#" email="dasu@gmail.com"/>
         </ul>
         </React.Fragment>
     );
