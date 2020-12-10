@@ -3,6 +3,19 @@ import React from 'react';
 import NameListItem from './NameListItem'
 
 function Namelist(){
+
+    const Namelist={
+        name: {
+        title: "mr",
+        first: "brad",
+        last: "gibson"
+      },
+      "location": {
+        
+        "city": "kilcoole",
+      },
+      "email": "brad.gibson@example.com",
+};
     return(
         <React.Fragment>
         <h1>Name List</h1>
