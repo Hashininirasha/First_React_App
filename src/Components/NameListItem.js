@@ -1,8 +1,8 @@
 import React from 'react';
 
-function NameListItem(){
+function NameListItem(props){
     return(
-        <li>Hashini - Course - Csharp</li>
+        <li>Name {props.name} Course {props.course}</li>
 
 
 
