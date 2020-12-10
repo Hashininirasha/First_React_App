@@ -10,11 +10,18 @@ function Namelist(){
         first: "brad",
         last: "gibson"
       },
-      "location": {
+      location: {
         
-        "city": "kilcoole",
+        city: "kilcoole",
       },
-      "email": "brad.gibson@example.com",
+      email: "brad.gibson@example.com",
+      dob: {
+        date: "1993-07-20T09:44:18.674Z",
+        age: 26
+      },
+      picture: {
+        medium: "https://randomuser.me/api/portraits/med/men/75.jpg",
+      },
 };
     return(
         <React.Fragment>
