@@ -3,10 +3,11 @@ import React from 'react';
 function NameListItem(props){
     return(
         <li>
-        <p><img src={props.Avatar} />{props.name}</p>
-        <p>{props.city}</p>
-        <p>{props.email}</p>
-        <p>{props.birthday}</p>
+        <p>Photo : <img src={props.Avatar} />Name : {props.name}</p>
+        <p>City : {props.city}</p>
+        <p>Email : {props.email}</p>
+        <p>Birthday : {'   '}
+            {new Intl.DateTimeFormat('en-US').format(new Date(props.birthday))}</p>
         
 
 

@@ -29,7 +29,7 @@ function Namelist(){
         <hr />
         <ul>
              <NameListItem  
-             name={Namelist.name.first +" "+ Namelist.name.last} 
+             name={`${Namelist.name.first } ${Namelist.name.last}`} 
              city={Namelist.location.city} 
              email={Namelist.email}
              birthday={Namelist.dob.date +" "+Namelist.dob.age}
