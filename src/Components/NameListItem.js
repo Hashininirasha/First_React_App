@@ -1,5 +1,5 @@
 import React from 'react';
-
+import moment from 'moment'
 function NameListItem(props){
     return(
         <li>
@@ -7,7 +7,7 @@ function NameListItem(props){
         <p>City : {props.city}</p>
         <p>Email : {props.email}</p>
         <p>Birthday : {'   '}
-            {new Intl.DateTimeFormat('en-US').format(new Date(props.birthday))}</p>
+            {props.birthday}</p>
         
 
 
