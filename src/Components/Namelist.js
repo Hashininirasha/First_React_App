@@ -29,7 +29,7 @@ function Namelist(){
         <hr />
         <ul>
              <NameListItem  
-             name='Hashini' 
+             name={Namelist.name.first +" "+ Namelist.name.last} 
              city="html" 
              email="hasi@gmail.com"
              birthday=""
