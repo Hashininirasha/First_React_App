@@ -4,7 +4,7 @@ import NameListItem from './NameListItem'
 
 function Namelist(){
 
-    const Namelist={
+    const Namelist=[{
         name: {
         title: "mr",
         first: "brad",
@@ -22,18 +22,18 @@ function Namelist(){
       picture: {
         medium: "https://randomuser.me/api/portraits/med/men/75.jpg",
       },
-};
+}];
     return(
         <React.Fragment>
         <h1>Name List</h1>
         <hr />
         <ul>
              <NameListItem  
-             name={`${Namelist.name.first } ${Namelist.name.last}`} 
-             city={Namelist.location.city} 
-             email={Namelist.email}
-             birthday={Namelist.dob.date +" "+Namelist.dob.age}
-             Avatar={Namelist.picture.medium}
+             name={`${Namelist[0].name.first } ${Namelist[0].name.last}`} 
+             city={Namelist[0].location.city} 
+             email={Namelist[0].email}
+             birthday={Namelist[0].dob.date +" "+Namelist[0].dob.age}
+             Avatar={Namelist[0].picture.medium}
              />
            
         </ul>
