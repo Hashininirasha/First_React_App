@@ -30,10 +30,10 @@ function Namelist(){
         <ul>
              <NameListItem  
              name={Namelist.name.first +" "+ Namelist.name.last} 
-             city="html" 
-             email="hasi@gmail.com"
-             birthday=""
-             Avatar=""
+             city={Namelist.location.city} 
+             email={Namelist.email}
+             birthday={Namelist.dob.date +" "+Namelist.dob.age}
+             Avatar={Namelist.picture.medium}
              />
            
         </ul>
