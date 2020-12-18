@@ -22,6 +22,24 @@ function Namelist(){
       picture: {
         medium: "https://randomuser.me/api/portraits/med/men/75.jpg",
       },
+      name: {
+        title: "mr",
+        first: "Deann",
+        last: "Marshall"
+      },
+      location: {
+        
+        city: "Shepparton",
+      },
+      email: "deann.marshall@example.com",
+      dob: {
+        date: "1951-11-19T11:24:57.168Z",
+        age: 69
+      },
+      picture: {
+        medium: "https://randomuser.me/api/portraits/med/women/62.jpg",
+      },
+
 }];
     return(
         <React.Fragment>
