@@ -21,7 +21,8 @@ function Namelist(){
       },
       picture: {
         medium: "https://randomuser.me/api/portraits/med/men/75.jpg",
-      },
+      },},
+      {
       name: {
         title: "mr",
         first: "Deann",
@@ -38,7 +39,25 @@ function Namelist(){
       },
       picture: {
         medium: "https://randomuser.me/api/portraits/med/women/62.jpg",
-      },
+      },},
+      {
+        name: {
+          title: "mr",
+          first: "Florence",
+          last: "King"
+        },
+        location: {
+          
+          city: "Plymouth",
+        },
+        email: "florence.king@example.com",
+        dob: {
+          date: "florence.king@example.com",
+          age: 37
+        },
+        picture: {
+          medium: "https://randomuser.me/api/portraits/med/women/14.jpg",
+        },
 
 }];
     return(
@@ -52,6 +71,26 @@ function Namelist(){
              email={Namelist[0].email}
              birthday={Namelist[0].dob.date +" "+Namelist[0].dob.age}
              Avatar={Namelist[0].picture.medium}
+             />
+           
+        </ul>
+        <ul>
+             <NameListItem  
+             name={`${Namelist[1].name.first } ${Namelist[1].name.last}`} 
+             city={Namelist[1].location.city} 
+             email={Namelist[1].email}
+             birthday={Namelist[1].dob.date +" "+Namelist[1].dob.age}
+             Avatar={Namelist[1].picture.medium}
+             />
+           
+        </ul>
+        <ul>
+             <NameListItem  
+             name={`${Namelist[2].name.first } ${Namelist[2].name.last}`} 
+             city={Namelist[2].location.city} 
+             email={Namelist[2].email}
+             birthday={Namelist[2].dob.date +" "+Namelist[2].dob.age}
+             Avatar={Namelist[2].picture.medium}
              />
            
         </ul>
