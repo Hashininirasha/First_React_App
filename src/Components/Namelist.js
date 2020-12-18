@@ -62,16 +62,20 @@ function Namelist(){
 }];
 
 const namelistcom = () => {
-  return (<ul>
-    <NameListItem  
-    name={`${Namelist[0].name.first } ${Namelist[0].name.last}`} 
-    city={Namelist[0].location.city} 
-    email={Namelist[0].email}
-    birthday={Namelist[0].dob.date +" "+Namelist[0].dob.age}
-    Avatar={Namelist[0].picture.medium}
-    />
-  
-</ul>)
+  return (
+  Namelist.map(aName => {
+    return(  <ul>
+      <NameListItem  
+      name={`${aName.name.first } ${aName.name.last}`} 
+      city={aName.location.city} 
+      email={aName.email}
+      birthday={aName.dob.date +" "+aName.dob.age}
+      Avatar={aName.picture.medium}
+      />
+    
+  </ul>)
+  })
+)
 }
 
 
@@ -80,26 +84,7 @@ const namelistcom = () => {
         <h1>Name List</h1>
         <hr />
         {namelistcom()}
-        <ul>
-             <NameListItem  
-             name={`${Namelist[1].name.first } ${Namelist[1].name.last}`} 
-             city={Namelist[1].location.city} 
-             email={Namelist[1].email}
-             birthday={Namelist[1].dob.date +" "+Namelist[1].dob.age}
-             Avatar={Namelist[1].picture.medium}
-             />
-           
-        </ul>
-        <ul>
-             <NameListItem  
-             name={`${Namelist[2].name.first } ${Namelist[2].name.last}`} 
-             city={Namelist[2].location.city} 
-             email={Namelist[2].email}
-             birthday={Namelist[2].dob.date +" "+Namelist[2].dob.age}
-             Avatar={Namelist[2].picture.medium}
-             />
-           
-        </ul>
+       
         </React.Fragment>
     );
 }
