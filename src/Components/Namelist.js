@@ -5,7 +5,7 @@ import NameListItem from './NameListItem'
 function Namelist(){
 
     const Namelist=[{
-        id=1,
+        id:1,
         name: {
         title: "mr",
         first: "brad",
@@ -24,7 +24,7 @@ function Namelist(){
         medium: "https://randomuser.me/api/portraits/med/men/75.jpg",
       },},
       {
-        id=2,
+        id:2,
       name: {
         title: "mr",
         first: "Deann",
@@ -43,7 +43,7 @@ function Namelist(){
         medium: "https://randomuser.me/api/portraits/med/women/62.jpg",
       },},
       {
-        id=3,
+        id:3,
         name: {
           title: "mr",
           first: "Florence",
