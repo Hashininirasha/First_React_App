@@ -1,6 +1,10 @@
 import React from 'react';
 function Headrbar(){
-    return (<h1>Name List</h1>)
+    return(
+        <nav classname="navbar navbar-light bg-light">
+            <span> Name_List </span>
+        </nav>
+    )
 }
 
 
