@@ -60,20 +60,26 @@ function Namelist(){
         },
 
 }];
+
+const namelistcom = () => {
+  return (<ul>
+    <NameListItem  
+    name={`${Namelist[0].name.first } ${Namelist[0].name.last}`} 
+    city={Namelist[0].location.city} 
+    email={Namelist[0].email}
+    birthday={Namelist[0].dob.date +" "+Namelist[0].dob.age}
+    Avatar={Namelist[0].picture.medium}
+    />
+  
+</ul>)
+}
+
+
     return(
         <React.Fragment>
         <h1>Name List</h1>
         <hr />
-        <ul>
-             <NameListItem  
-             name={`${Namelist[0].name.first } ${Namelist[0].name.last}`} 
-             city={Namelist[0].location.city} 
-             email={Namelist[0].email}
-             birthday={Namelist[0].dob.date +" "+Namelist[0].dob.age}
-             Avatar={Namelist[0].picture.medium}
-             />
-           
-        </ul>
+        {namelistcom()}
         <ul>
              <NameListItem  
              name={`${Namelist[1].name.first } ${Namelist[1].name.last}`} 
