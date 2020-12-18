@@ -5,6 +5,7 @@ import NameListItem from './NameListItem'
 function Namelist(){
 
     const Namelist=[{
+        id=1,
         name: {
         title: "mr",
         first: "brad",
@@ -23,6 +24,7 @@ function Namelist(){
         medium: "https://randomuser.me/api/portraits/med/men/75.jpg",
       },},
       {
+        id=2,
       name: {
         title: "mr",
         first: "Deann",
@@ -41,6 +43,7 @@ function Namelist(){
         medium: "https://randomuser.me/api/portraits/med/women/62.jpg",
       },},
       {
+        id=3,
         name: {
           title: "mr",
           first: "Florence",
@@ -65,7 +68,8 @@ const namelistcom = () => {
   return (
   Namelist.map(aName => {
     return(  <ul>
-      <NameListItem  
+      <NameListItem 
+      key={aName.id} 
       name={`${aName.name.first } ${aName.name.last}`} 
       city={aName.location.city} 
       email={aName.email}
