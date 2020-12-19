@@ -85,8 +85,8 @@ const namelistcom = () => {
 
     return(
         <React.Fragment>
-        <div className='container mt-5'>
-        <ul>{namelistcom()}</ul>
+        <div className='container mt-3'>
+        <ul className="list-group">{namelistcom()}</ul>
         </div>
         
         

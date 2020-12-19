@@ -5,7 +5,7 @@ import './NameListItem.css'
 
 function NameListItem(props){
     return(
-        <li>
+        <li className="list-group-item">
         <p className='redtext'>Photo : <img src={props.Avatar} alt={props.name} /><br/><br/>Name : {props.name}</p>
         <p style={{color:'green'}}>City : {props.city}</p>
         <p>Email : {props.email}</p>
