@@ -6,11 +6,11 @@ import './NameListItem.css'
 function NameListItem(props){
     return(
         <li className="list-group-item">
-            <div className="row">
-                <div className="col-md">
+            <div className="row align-items-center">
+                <div className="col-2">
                 <img src={props.Avatar} alt={props.name} />
                 </div>
-                <div className="col-sm">
+                <div className="col-10">
                 <h4>{props.name}</h4>
                 <p>{props.city} | {props.email} </p>
                 <small>{moment(props.dob).format('DD-MM-YYYY')}</small>
