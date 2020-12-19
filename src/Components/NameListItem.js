@@ -11,10 +11,9 @@ function NameListItem(props){
                 <img src={props.Avatar} alt={props.name} />
                 </div>
                 <div className="col-sm">
-                <p>Name : {props.name}</p>
-                <p>City : {props.city}</p>
-                <p>Email : {props.email}</p>
-                <p>Birthday : {moment(props.dob).format('DD-MM-YYYY')}</p>
+                <h4>{props.name}</h4>
+                <p>{props.city} | {props.email} </p>
+                <small>{moment(props.dob).format('DD-MM-YYYY')}</small>
                 </div>
             </div>
         </li>
