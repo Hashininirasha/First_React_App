@@ -85,8 +85,8 @@ const namelistcom = () => {
 
     return(
         <React.Fragment>
-        <h1>Name List</h1>
-        <hr />
+        
+        
         {namelistcom()}
        
         </React.Fragment>

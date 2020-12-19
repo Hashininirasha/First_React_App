@@ -1,11 +1,11 @@
-import React from 'react';
-function Headrbar(){
+import React  from 'react';
+function Header(){
     return(
-        <nav classname="navbar navbar-light bg-light">
-            <span> Name_List </span>
+        <nav className="navbar navbar-light bg-light">
+            <span className="navbar-brand mb-0 h1"> Name_List </span>
         </nav>
-    )
+    );
 }
 
 
-export default Headrbar;
+export default Header;
