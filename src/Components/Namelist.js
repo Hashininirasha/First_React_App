@@ -85,8 +85,27 @@ const namelistcom = () => {
 )
 }
   const adduserHandler = () =>{
-    console.log("Button Clicked");
+    const newUser = {
+      id:3,
+        name: {
+          title: "mr",
+          first: "Florence",
+          last: "King"
+        },
+        location: {
+          
+          city: "Plymouth",
+        },
+        email: "florence.king@example.com",
+        dob: {
+          date: "florence.king@example.com",
+          age: 37
+        },
+        picture: {
+          medium: "https://randomuser.me/api/portraits/med/women/14.jpg",
+    },
   }
+};
 
 
     return(
