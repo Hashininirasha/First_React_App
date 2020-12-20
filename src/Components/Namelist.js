@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import NameListItem from './NameListItem'
 
 function Namelist(){
 
-    const Namelist=[{
+    const [Namelist,setNameList]= useState([
+      {
         id:1,
         name: {
         title: "mr",
@@ -62,7 +63,9 @@ function Namelist(){
           medium: "https://randomuser.me/api/portraits/med/women/14.jpg",
         },
 
-}];
+       }
+       ]);
+
 
 const namelistcom = () => {
   return (
