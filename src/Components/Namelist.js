@@ -84,12 +84,15 @@ const namelistcom = () => {
   })
 )
 }
+  const adduserHandler = () =>{
+    console.log("Button Clicked");
+  }
 
 
     return(
         <React.Fragment>
         <div className='container mt-3'>
-        <button type="button" className="btn btn-danger mb-2">Add Name</button>
+        <button type="button" className="btn btn-danger mb-2 onClick={adduserHandler}">Add Name</button>
         <ul className="list-group">{namelistcom()}</ul>
         </div>
         
