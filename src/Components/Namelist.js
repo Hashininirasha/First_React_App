@@ -105,6 +105,7 @@ const namelistcom = () => {
           medium: "https://randomuser.me/api/portraits/med/men/55.jpg",
     },
   }
+  setNameList(Namelist.concat(newUser));
 };
 
 
