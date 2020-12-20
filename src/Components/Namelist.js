@@ -56,7 +56,7 @@ function Namelist(){
         },
         email: "florence.king@example.com",
         dob: {
-          date: "florence.king@example.com",
+          date: "1988-06-14T22:56:37.378Z",
           age: 37
         },
         picture: {
@@ -89,20 +89,20 @@ const namelistcom = () => {
       id:3,
         name: {
           title: "mr",
-          first: "Florence",
-          last: "King"
+          first: "Valtteri",
+          last: "Waara"
         },
         location: {
           
-          city: "Plymouth",
+          city: "Karelia",
         },
-        email: "florence.king@example.com",
+        email: "valtteri.waara@example.com",
         dob: {
-          date: "florence.king@example.com",
-          age: 37
+          date: "1988-06-14T22:56:37.378Z",
+          age: 32
         },
         picture: {
-          medium: "https://randomuser.me/api/portraits/med/women/14.jpg",
+          medium: "https://randomuser.me/api/portraits/med/men/55.jpg",
     },
   }
 };
