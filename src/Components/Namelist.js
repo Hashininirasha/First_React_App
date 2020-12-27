@@ -102,7 +102,8 @@ const adduserHandler = () =>{
         medium: "https://randomuser.me/api/portraits/med/men/55.jpg",
   },
 };
-setNameList(Namelist => Namelist.concat(newUser));
+    //setNameList((Namelist) => Namelist.concat(newUser));
+    setNameList([...Namelist, newUser]);
 };
 
 
