@@ -103,7 +103,7 @@ const adduserHandler = () =>{
   },
 };
     //setNameList((Namelist) => Namelist.concat(newUser));
-    setNameList([...Namelist, newUser]);
+    setNameList(Namelist => [...Namelist, newUser]);
 };
 
 
