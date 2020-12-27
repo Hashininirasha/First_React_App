@@ -68,22 +68,19 @@ function Namelist(){
 
 
 const namelistcom = () => {
-  return (
-  Namelist.map(aName => {
-    return(  <ul>
+  return Namelist.map ((aName) => {
+    return( 
       <NameListItem 
       key={aName.id} 
       name={`${aName.name.first } ${aName.name.last}`} 
       city={aName.location.city} 
       email={aName.email}
-      birthday={aName.dob.date +" "+aName.dob.age}
+      birthday={aName.dob.date}
       Avatar={aName.picture.medium}
       />
-    
-  </ul>)
-  })
-)
-}
+    );
+  });
+};
 const adduserHandler = () =>{
   const newUser = {
     id:4,
@@ -106,8 +103,8 @@ const adduserHandler = () =>{
   },
 };
 setNameList(Namelist.concat(newUser));
-  
 };
+
 
 
     return(
