@@ -66,6 +66,13 @@ function Namelist(){
         
        ]);
 
+useEffect(() => {
+
+  console.log("Render Method called")
+}
+
+);
+
 
 const namelistcom = () => {
   return Namelist.map ((aName) => {
