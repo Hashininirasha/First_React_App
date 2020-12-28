@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import NameListItem from './NameListItem'
+import NameListItem from './NameListItem';
 
 function Namelist(){
 
@@ -61,9 +61,27 @@ function Namelist(){
         },
         picture: {
           medium: "https://randomuser.me/api/portraits/med/women/14.jpg",
-        },
-
-       }
+        },},
+        {
+          id:3,
+          name: {
+            title: "mr",
+            first: "Florence",
+            last: "King"
+          },
+          location: {
+            
+            city: "Plymouth",
+          },
+          email: "florence.king@example.com",
+          dob: {
+            date: "1988-06-14T22:56:37.378Z",
+            age: 37
+          },
+          picture: {
+            medium: "https://randomuser.me/api/portraits/med/women/14.jpg",
+          },},
+        
        ]);
 
 
@@ -84,23 +102,11 @@ const namelistcom = () => {
 const adduserHandler = () =>{
   const newUser = {
     id:4,
-      name: {
-        title: "mr",
-        first: "Valtteri",
-        last: "Waara"
-      },
-      location: {
-        
-        city: "Karelia",
-      },
+      name: { title: "mr",first: "Valtteri",last: "Waara"},
+      location: { city: "Karelia"},
       email: "valtteri.waara@example.com",
-      dob: {
-        date: "1988-06-14T22:56:37.378Z",
-        age: 32
-      },
-      picture: {
-        medium: "https://randomuser.me/api/portraits/med/men/55.jpg",
-  },
+      dob: { date: "1988-06-14T22:56:37.378Z",age: 32},
+      picture: { medium: "https://randomuser.me/api/portraits/med/men/55.jpg"},
 };
     //setNameList((Namelist) => Namelist.concat(newUser));
     setNameList(Namelist => [...Namelist, newUser]);
