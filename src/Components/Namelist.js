@@ -62,25 +62,7 @@ function Namelist(){
         picture: {
           medium: "https://randomuser.me/api/portraits/med/women/14.jpg",
         },},
-        {
-          id:3,
-          name: {
-            title: "mr",
-            first: "Florence",
-            last: "King"
-          },
-          location: {
-            
-            city: "Plymouth",
-          },
-          email: "florence.king@example.com",
-          dob: {
-            date: "1988-06-14T22:56:37.378Z",
-            age: 37
-          },
-          picture: {
-            medium: "https://randomuser.me/api/portraits/med/women/14.jpg",
-          },},
+       
         
        ]);
 
@@ -117,7 +99,7 @@ const adduserHandler = () =>{
     return(
         <React.Fragment>
         <div className='container mt-3'>
-        <button type="button" className="btn btn-danger mb-2 onClick={adduserHandler}">Add Name</button>
+        <button type="button" className="btn btn-danger mb-2" onClick={adduserHandler}>Add Name</button>
         <ul className="list-group">{namelistcom()}</ul>
         </div>
         
