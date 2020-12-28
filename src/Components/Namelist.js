@@ -90,7 +90,7 @@ const namelistcom = () => {
 };
 const adduserHandler = () =>{
   const newUser = {
-    id:new date(),
+    id:new Date(),
       name: { title: "mr",first: "Valtteri",last: "Waara"},
       location: { city: "Karelia"},
       email: "valtteri.waara@example.com",
