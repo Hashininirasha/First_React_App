@@ -68,7 +68,9 @@ function Namelist(){
 
 useEffect(() => {
 
-  console.log("Render Method called")
+  fetch("https://www.randomuser.me/api").then(Response => {
+    console.log(Response);
+  })
 }
 
 );
