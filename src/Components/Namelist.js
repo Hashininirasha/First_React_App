@@ -93,13 +93,8 @@ const namelistcom = () => {
   });
 };
 const adduserHandler = () =>{
-  const newUser = {
-    id:new Date(),
-      name: { title: "mr",first: "Valtteri",last: "Waara"},
-      location: { city: "Karelia"},
-      email: "valtteri.waara@example.com",
-      dob: { date: "1988-06-14T22:56:37.378Z",age: 32},
-      picture: { medium: "https://randomuser.me/api/portraits/med/men/55.jpg"},
+  
+    setloaddata(true);
 };
     //setNameList((Namelist) => Namelist.concat(newUser));
     setNameList(Namelist => [...Namelist, newUser]);
