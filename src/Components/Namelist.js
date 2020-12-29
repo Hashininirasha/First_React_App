@@ -96,9 +96,7 @@ const adduserHandler = () =>{
   
     setloaddata(true);
 };
-    //setNameList((Namelist) => Namelist.concat(newUser));
-    setNameList(Namelist => [...Namelist, newUser]);
-};
+
 
 
 
@@ -114,4 +112,5 @@ const adduserHandler = () =>{
         </React.Fragment>
     );
 }
+
 export default Namelist;
