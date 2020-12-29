@@ -94,7 +94,7 @@ const namelistcom = () => {
 };
 const adduserHandler = () =>{
   
-    setloaddata(true);
+    setloaddata(new Date());
 };
 
 
