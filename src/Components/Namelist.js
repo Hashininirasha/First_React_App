@@ -71,7 +71,7 @@ useEffect(() => {
   fetch("https://www.randomuser.me/api").then(Response => {
     return Response.json();
   }).then (ResponseData => {
-    //setNameList([ResponseData.results[0]]);
+    setNameList(NameListItem => [...Namelist,ResponseData.results[0]]);
   });
 },[]
 
