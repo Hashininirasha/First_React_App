@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import NameListItem from './NameListItem';
 
 function Namelist(){
-
+    const [loaddata,setloaddata]= useState(false);
     const [Namelist,setNameList]= useState([
       {
         id:1,
