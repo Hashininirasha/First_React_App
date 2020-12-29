@@ -73,7 +73,7 @@ useEffect(() => {
   }).then (ResponseData => {
     setNameList(NameListItem => [...Namelist,ResponseData.results[0]]);
   });
-},[]
+},[loaddata]
 
 );
 
