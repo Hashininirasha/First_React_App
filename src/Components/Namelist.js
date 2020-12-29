@@ -69,8 +69,8 @@ function Namelist(){
 useEffect(() => {
 
   fetch("https://www.randomuser.me/api").then(Response => {
-    console.log(Response);
-  })
+    return Response.json();
+  });
 }
 
 );
