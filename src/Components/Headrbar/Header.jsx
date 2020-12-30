@@ -3,10 +3,10 @@ function Header(){
     return(
         <nav className="navbar navbar-expand-lg navbar-light bg-light shadow">
             <span className="navbar-brand mb-0 h1"> Name_List </span>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
+            <ul className="navbar-nav">
+                <li className="navbar-item"><a href="#">Home</a></li>
+                <li className="navbar-item"><a href="#">About</a></li>
+                <li className="navbar-item"><a href="#">Contact Us</a></li>
 
             </ul>
         </nav>
