@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import Namelist from './Components/Namelist'
+import Namelist from './Components/Namelist/Namelist'
 import './App.css';
 import Header from './Components/Headrbar/Header';
 
