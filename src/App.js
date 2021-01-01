@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {BrowserRouter} from 'react-router-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 import Namelist from './Components/pages/Namelist/Namelist'
 import './App.css';
 import Header from './Components/Headrbar/Header';
@@ -9,10 +9,15 @@ import About from './Components/pages/About/About';
 function App() {
   return (
     <div>
+      <BrowserRouter>
       <Header />
+      <Route path="/">
       <Home />
-      <About />
-      <Namelist />
+      </Route>
+      <Route path="/about"><About /></Route>
+      <Route path="/namelist"><Namelist /></Route>
+      
+      </BrowserRouter>
     </div>
   );
 }
