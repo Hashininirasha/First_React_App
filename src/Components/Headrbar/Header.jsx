@@ -1,12 +1,13 @@
 import React  from 'react';
+import {Link} from 'react-router-dom';
 function Header(){
     return(
         <nav className="navbar navbar-expand-lg navbar-light bg-light shadow">
             <span className="navbar-brand mb-0 h1"> Name_List </span>
             <ul className="navbar-nav">
-                <li className="nav-item"><a className="nav-link" href="#">Home</a></li>
-                <li className="nav-item"><a className="nav-link" href="#">About</a></li>
-                <li className="nav-item"><a className="nav-link" href="#">Contact Us</a></li>
+                <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/namelist">Contact Us</Link></li>
 
             </ul>
         </nav>
